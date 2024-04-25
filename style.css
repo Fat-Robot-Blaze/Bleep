@@ -42,7 +42,7 @@ h2{
 .bottom{
     position:absolute;
     border-radius: 25px;
-  background: -webkit-linear-gradient(#ffffff, #b0b0b0);
+  background: -webkit-linear-gradient(#3a3a3a, #1f1f1f);
   padding: 1%;
   width: 98%;
   height: 4000px;
@@ -61,7 +61,7 @@ h1{
     font-size: 1500%;
     text-align: center;
     width: 100%;
-    background: -webkit-linear-gradient(#0800ff, #ffffff, #ff0000);
+    background: -webkit-linear-gradient(#636363, #3d3d3d, #636363);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
