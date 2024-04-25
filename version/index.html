@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Talk To Gloop</title>
-    <link rel="shortcut icon" href="https://gloop.me/GLOOP.png">
+    <title>Talk To Bleep</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Talk To Gloop</div>
+        <div id="unity-build-title">Talk To Bleep</div>
       </div>
     </div>
     <script>
@@ -57,14 +57,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/version.loader.js";
+      var loaderUrl = buildUrl + "/bleep.loader.js";
       var config = {
-        dataUrl: buildUrl + "/version.data",
-        frameworkUrl: buildUrl + "/version.framework.js",
-        codeUrl: buildUrl + "/version.wasm",
+        dataUrl: buildUrl + "/bleep.data",
+        frameworkUrl: buildUrl + "/bleep.framework.js",
+        codeUrl: buildUrl + "/bleep.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Blaze Studios",
-        productName: "Talk To Gloop",
+        productName: "Talk To Bleep",
         productVersion: "1.04",
         showBanner: unityShowBanner,
       };
@@ -88,7 +88,7 @@
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
-        config.devicePixelRatio = 1;
+        // config.devicePixelRatio = 1;
 
 
       } else {
