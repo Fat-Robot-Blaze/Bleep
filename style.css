@@ -1,75 +1,144 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url("https://gloop.me/minecraft-ten.ttf");
+}
+
+
+*{
+    margin:0;
+    font-family: "Minecraft", sans-serif;
+}
 html {
-    background-color: rgb(74, 74, 74);
 }
-#gloopa{
-    height:100%;
-    display: block;
-    margin: auto;
-}
-#presigloop{
-    width:80%;
-    display: block;
-    margin: auto;
-}
-h2{
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 300%;
-    text-align: center;
-    width: 100%;
-    text-shadow:
-    -1px -1px 0 #FFF,
-    1px -1px 0 #FFF,
-    -1px 1px 0 #FFF,
-    1px 1px 0 #FFF;  
-}
-#flag{
-    position:fixed;
-    width:100%;
-    top:0px;
-    z-index: -2;
-    left:0px;
-}
-#actualtop{
-    z-index: -2;
+#gloopa {
     position:absolute;
-    height:500px;
-    width:100%;
-    left:0px;
-    top:0px;
+  width: 100%;
+  height:auto;
+  height: inherit;
 }
-.bottom{
-    position:absolute;
-    border-radius: 25px;
-  background: -webkit-linear-gradient(#3a3a3a, #1f1f1f);
-  padding: 1%;
-  width: 98%;
-  height: 4000px;
-  left:0px;
+#topText {
+  position:relative;
+  display:block;
+    margin:auto;
+    height: inherit;
+    max-width: 90%;
+    
+    z-index: -5;
+  
 }
-#rounded{
-    color:rgb(74, 74, 74);
+.mainText{
+    width: 95%;
 }
-#spacing{
-    height: 500px;
+.textIcon{
+    height:40px;
 }
-h1{
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1500%;
-    text-align: center;
-    width: 100%;
-    background: -webkit-linear-gradient(#636363, #3d3d3d, #636363);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#presigloop {
+  width: 80%;
+  display: block;
+  margin: auto;
 }
-#socials img{
-    width: 20%;
-    -webkit-filter: drop-shadow(1px 1px 0 #FFF) drop-shadow(-1px -1px 0 #FFF);
-    filter: drop-shadow(1px 1px 0 #FFF) drop-shadow(-1px -1px 0 #FFF);
+#presigloop2 {
+  max-width: 75%;
+  max-height: 75%;
+  display: block;
+  margin: auto;
 }
-#socials{
-    height:10%;
+.sideText{
+    width: 50%;
+}
+h3 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  color:#ffffff;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+h2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 300%;
+  text-align: center;
+  width: 100%;
+  color:#ffffff;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+#actualtop {
+  z-index: -2;
+  height: 800px;
+  width: 100%;
+  transition: .5s ease;
+}
+.bg {
+  background: rgb(74, 74, 74);
+}
+#rounded {
+  color: rgb(74, 74, 74);
+}
+#spacing {
+  height: 500px;
+}
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 400%;
+  text-align: center;
+  width: 100%;
+  color:white;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+.socialImg {
+  width: 10%;
+  -webkit-filter: drop-shadow(1px 1px 0 #fff) drop-shadow(-1px -1px 0 #fff) drop-shadow(1px -1px 0 #fff) drop-shadow(-1px 1px 0 #fff);
+  filter: drop-shadow(1px 1px 0 #fff) drop-shadow(-1px -1px 0 #fff) drop-shadow(1px -1px 0 #fff) drop-shadow(-1px 1px 0 #fff);
+}
+.outlineImg{
+    -webkit-filter: drop-shadow(3px 3px 0 #fff) drop-shadow(-3px -3px 0 #fff) drop-shadow(3px -3px 0 #fff) drop-shadow(-3px 3px 0 #fff);
+  filter: drop-shadow(3px 3px 0 #fff) drop-shadow(-3px -3px 0 #fff) drop-shadow(3px -3px 0 #fff) drop-shadow(-3px 3px 0 #fff);
+}
+#socials {
+  height: 10%;
+}
+.flexcontainer{
+    display: flex;
+  align-items: center;
+  justify-content: center
+}
+.flexcontainer div{
+    width:50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexcontainer div h2{
+    flex: 0 0 50%;
+}
+#fixedBG{
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -5;
+  object-fit: cover;
+}
+div #fixedBG{
+  overflow: hidden;
+}
+
+.hoverAnim{
+  transition: .5s ease;
+}
+.hoverAnim:hover  {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#actualtop:hover .hoverAnim{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
